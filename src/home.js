@@ -1,10 +1,11 @@
 import {content} from './index.js';
 
-
-function home(){
+function homePage(){
     
-    content.innerText='afasf';
-
+    const header = document.createElement('h1');
+    header.classList.add('header');
+    header.innerText = 'This is the home page';
+    content.appendChild(header);
 }
 
-export {home}
+export {homePage}

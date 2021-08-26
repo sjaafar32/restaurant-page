@@ -28,3 +28,11 @@ html {
     margin: 3rem;
     color: white;
 }
+
+.nav-text:hover {
+    text-decoration: underline;
+}
+
+.header {
+    color: green;
+}
