@@ -2,6 +2,11 @@ html {
     font-size: 62.5%;
 }
 
+/*#main {
+    height: 100vh;
+    
+}*/
+
 .nav-logo-div {
     display: flex;
     justify-content: center;
@@ -9,9 +14,18 @@ html {
     flex-direction: column;
 }
 
+.logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
-    height: 200px;
-    width: 300px;
+    height: max(15vh, 50px);
+}
+
+.nav-div {
+    display: flex;
 }
 
 .nav-bar {
@@ -25,7 +39,7 @@ html {
 
 .nav-text {
     font-size: 3rem;
-    margin: 3rem;
+    margin: 2rem max(2.5vw, 1.4rem);
     color: white;
 }
 
@@ -33,6 +47,44 @@ html {
     text-decoration: underline;
 }
 
-.header {
-    color: green;
+.home-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: min(75vw, 1000px);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: max(3vw, 2.5rem);
+    font-weight: 500;
+    color: rgb(67, 153, 67);
+    padding: 1rem;
+    text-align: center;
+    position: absolute;
+    top: max(32vh, 200px);
+    background-color: rgba(255, 255, 255, 0.733);
+}
+
+.menu-button {
+    width: min(15rem, 35vw);
+    height: 50px;
+    margin: auto auto 2vh auto;
+    border-style: none;
+    background-color: rgb(67, 153, 67);
+    border-radius: 20px;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.food-image {
+    /*position: relative;*/
+    width: 100%;
+    height: 70vh;
+    opacity: 50%;
+    object-fit: cover;
 }
