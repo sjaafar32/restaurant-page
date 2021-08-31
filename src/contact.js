@@ -1,10 +1,12 @@
 import {content} from './index.js';
 
 function contactPage(){
-    const contactText = document.createElement('h1');
+    const div = document.createElement('div');
+    div.classList.add('text-div');
+    const contactText = document.createElement('p');
     contactText.textContent = 'This is the contact page';
-    contactText.classList.add('header');
-    content.appendChild(contactText);
+    div.appendChild(contactText);
+    content.appendChild(div);
 }
 
 export {contactPage}

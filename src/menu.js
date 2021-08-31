@@ -1,10 +1,12 @@
 import {content} from './index.js';
 
 function menuPage(){
-    const menuText = document.createElement('h1');
+    const div = document.createElement('div');
+    div.classList.add('text-div');
+    const menuText = document.createElement('p');
     menuText.textContent = 'This is the menu page';
-    menuText.classList.add('header');
-    content.appendChild(menuText);
+    div.appendChild(menuText);
+    content.appendChild(div);
 }
 
 export {menuPage}

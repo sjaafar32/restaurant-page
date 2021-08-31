@@ -3,11 +3,18 @@ import {navBar, home, menu, contact} from './nav.js';
 import {homePage} from './home.js';
 import {menuPage} from './menu.js';
 import {contactPage} from './contact.js';
+import Background from './food.jpeg';
+
+const foodImg = new Image();
+foodImg.src = Background;
+foodImg.classList.add('food-image');
 
 
 const content = document.getElementById('content');
+const main = document.querySelector("main");
 
 navBar();
+homePage();
 
 function resetHome(){
     content.textContent = '';
@@ -35,4 +42,4 @@ document.addEventListener('click', (e) =>{
     if (target === 'Contact') resetContact();
 });
 
-export{content}
+export{content, resetMenu}
