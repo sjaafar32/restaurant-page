@@ -15,7 +15,7 @@ function homePage(){
     foodImg.classList.add('food-image');
 
     const menuBtn = document.createElement('button');
-    menuBtn.classList.add('menu-button');
+    menuBtn.classList.add('order-button');
     menuBtn.innerText = 'Order Now';
     menuBtn.addEventListener('click', resetMenu);
 

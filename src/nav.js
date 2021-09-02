@@ -1,6 +1,6 @@
 import {content} from './index.js';
 import css from '../style.css';
-import Icon from './logo.png';
+import Icon from './CEDAR2.png';
 
 let home;
 let menu;

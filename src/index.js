@@ -11,6 +11,7 @@ foodImg.classList.add('food-image');
 
 
 const content = document.getElementById('content');
+content.classList.add('content-div');
 const main = document.querySelector("main");
 
 navBar();
