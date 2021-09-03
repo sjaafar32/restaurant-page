@@ -8,7 +8,7 @@ function homePage(){
     const textDiv = document.createElement('div');
     const homeText = document.createElement('p');
     textDiv.classList.add('text-div');
-    homeText.innerText = `Welcome to Cedar Tree, \n Home of Authentic Lebanese Cuisine!`;
+    homeText.innerText = `Welcome to Cedar Tree, \n Home to Authentic Lebanese Cuisine!`;
 
     const foodImg = document.createElement('img');
     foodImg.src = Background;
