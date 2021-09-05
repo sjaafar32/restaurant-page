@@ -15,7 +15,7 @@ content.classList.add('content-div');
 const main = document.querySelector("main");
 
 navBar();
-contactPage();
+homePage();
 
 function resetHome(){
     content.textContent = '';
