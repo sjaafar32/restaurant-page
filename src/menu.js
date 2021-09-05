@@ -3,6 +3,8 @@ import img from './hummus.jpg';
 import img2 from './fattoush.jpg';
 import img3 from './tabbouleh.jpg';
 import img4 from './kafta.jpg';
+import img5 from './chicken-shawarma.jpg';
+import img6 from './manakish.jpg';
 
 function menuPage(){
     const menuDiv = document.createElement('div');
@@ -30,8 +32,7 @@ function menuPage(){
             const newCard = document.createElement('div');
             newCard.classList.add('menu-card');
             const title = document.createElement('h3');
-            title.classList.add('card-title');
-            title.innerHTML = this.name + `\n` + this.price;
+            title.innerHTML = this.name + ` - ` + this.price;
 
             this.image.classList.add('card-image');
 
@@ -74,6 +75,20 @@ function menuPage(){
     const kaftaDes = 'Kafta is a traditional middle eastern dish made with ground beef or lamb, minced onions, chopped parsley, and seasoned with middle eastern spices.';
     const kafta = new foodCard('Kafta', '$6', kaftaImg, kaftaDes);
     kafta.createCard();
+
+    const shawarmaImg = new Image();
+    shawarmaImg.src = img5;
+    shawarmaImg.classList.add('card-image');
+    const shawarmaDes = 'The popular middle eastern shawarma sandwich consists of chicken or meat, various vegetables, garlic sauce all wrapped in pita bread.';
+    const shawarma = new foodCard('Shawarma Sandwich', '$5', shawarmaImg, shawarmaDes);
+    shawarma.createCard();
+
+    const manakishImg = new Image();
+    manakishImg.src = img6;
+    manakishImg.classList.add('card-image');
+    const manakishDes = 'Manakish is a popular Levantine food consisting of dough topped with thyme, cheese, or ground meat which can be sliced or folded.';
+    const manakish = new foodCard('Manakish', '$4', manakishImg, manakishDes);
+    manakish.createCard();
 }
 
 export {menuPage}
